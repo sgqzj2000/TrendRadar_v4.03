@@ -34,8 +34,8 @@ on:
     # 示例 / Examples:
     #   "15 * * * *"     → 每小时第15分钟 / minute 15 every hour
     #   "30 0-14 * * *"  → 北京时间 8:00-22:00 每小时第30分钟 / Beijing 8am-10pm
-    #
-    - cron: "33 * * * *"
+    #   10 0-15/2 * * *  → 北京时间 8:00-23:00 每2小时第10分钟 / Beijing 8am-11pm
+    - cron: "30 23-15/2 * * *"
 
   workflow_dispatch:
 
